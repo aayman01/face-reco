@@ -1,20 +1,34 @@
 <style>
-    #conatiner{
+    #container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
-    canvas{
+    
+    #video-feed {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    canvas {
         position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 </style>
 
-<canvas id="canvas"></canvas>
-
-<div id="conatiner">
-    <video id="video-feed" height="560" width="720" autoplay> </video>
+<div id="container">
+    <video id="video-feed" autoplay playsinline></video>
+    <canvas id="canvas"></canvas>
 </div>
-
-
 
 <script src="./face-api.min.js"></script>
 <script src="./scripts.js"></script>
