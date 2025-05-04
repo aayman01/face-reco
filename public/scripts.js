@@ -68,7 +68,7 @@ const run = async () => {
       const drawBox = new faceapi.draw.DrawBox(detection.box, options);
       drawBox.draw(canvas);
     });
-  }, 200);
+  }, 250);
 
 
 };
