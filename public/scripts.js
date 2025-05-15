@@ -46,6 +46,8 @@ const run = async () => {
     faceapi.draw.drawFaceLandmarks(canvas, faceAIData);
     faceapi.draw.drawFaceExpressions(canvas, faceAIData);
 
+    // console.log(faceAIData)
+
     // ask AI to guess age and gender with confidence level
     faceAIData.forEach((face) => {
       const { age, gender, genderProbability, detection, descriptor } = face;
